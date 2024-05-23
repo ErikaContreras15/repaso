@@ -1,0 +1,49 @@
+
+
+/* Estilo para el contenedor principal */
+div {
+    margin-bottom: 20px; /* Margen inferior para separar los contenedores */
+  }
+  
+  /* Estilo para los títulos */
+  h2 {
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    margin-bottom: 10px; /* Margen inferior para separar los títulos de los formularios */
+  }
+  
+  /* Estilo para los formularios */
+  form {
+    display: flex; /* Mostrar los elementos en línea */
+    flex-direction: column; /* Colocar los elementos uno encima del otro */
+  }
+  
+  /* Estilo para las etiquetas de los campos de entrada */
+  label {
+    margin-bottom: 5px; /* Margen inferior para separar las etiquetas de los campos de entrada */
+  }
+  
+  /* Estilo para los campos de entrada */
+  input {
+    margin-bottom: 10px; /* Margen inferior para separar los campos de entrada */
+    padding: 5px; /* Espaciado interno para mejorar la apariencia */
+    width: 100%; /* Ancho completo del contenedor */
+  }
+  
+  /* Estilo para los botones */
+  button {
+    padding: 5px 10px; /* Espaciado interno para mejorar la apariencia */
+    margin-top: 10px; /* Margen superior para separar los botones */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  }
+  
+  /* Estilo para la lista de libros */
+  ul {
+    list-style-type: none; /* Quitar los puntos de la lista */
+  }
+  
+  /* Estilo para los elementos de la lista de libros */
+  li {
+    margin-bottom: 5px; /* Margen inferior para separar los elementos de la lista */
+  }
+
+  

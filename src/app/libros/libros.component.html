@@ -1,0 +1,173 @@
+
+  
+<div>
+  <h2>Agregar Libro</h2>
+  <form (ngSubmit)="agregarLibro()">
+    <label for="nuevoTitulo">Título:</label>
+    <input id="nuevoTitulo" [(ngModel)]="nuevoTitulo" name="nuevoTitulo" required>
+    
+    <label for="nuevaDescripcion">Descripción:</label>
+    <input id="nuevaDescripcion" [(ngModel)]="nuevaDescripcion" name="nuevaDescripcion">
+    
+    <button (click)="agregarLibro()">Agregar Libro</button>
+  </form>
+</div>
+
+<div>
+  <h2>Lista de Libros</h2>
+  <ul>
+    <li *ngFor="let libro of listaLibros">
+      {{ libro.title }}
+      <button (click)="eliminarLibro(libro.id)">Eliminar</button>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------
+  1. npm install -g @angular/cli
+2. ng version
+
+*Instalar firebase
+ 1. npm install -g firebase-tools
+ 2. ng add @angular/fire
+ 3. ng build
+ 4. ng deploy
+ 5.firebase experiments:enable webframeworks
+ 6.firebase init hosting
+ 7.firebase deploy
+hostingne
+
+ *Mandar a correr Normal:
+ ng serve --open
+
+ *Mandar a correr Firebase:
+ 1. ng build
+ 2. ng deploy
+
+import {AngularFirestore,AngularFirestoreCollection
+} from '@angular/fire/compat/firestore'
+
+*******CREAR PROYECTO********
+ 1. ng new nombre del proyecto
+ 2. cd nombre del proyecto
+ 3. ng serve --open
+ng ng
+
+******PARA CREAR SUBCARPETAS****
+ 1 ng g component nombre de la carpeta
+ 2 ng g component menu/inicio
+
+-------Servicios-------------------------
+ng g service services/libros
+
+*******************GIT BASH**********************************
+git clone (el link de repositorio para clonar ) --------- Es para poder clonar
+git add .  ----------- Es para poder añadir todos los archivos modificados o nuevos
+git commit -m "Mensaje descriptivo del commit"  --------------- Es para guardar los cambios 
+git push origin master -------------- Es para subir los cambios al repositorio remoto (por ejemplo, GitHub)
+*****************************************************************************
+SUBIR PROYECTO A GIT DESDE GIT BASH
+git init
+git add .
+git commit -m "Mensaje de confirmación"
+git branch main
+git remote add origin <URL del repositorio>
+git push -u origin main
+****************************************************************************
+
+ACTUALIZAR GIT DESDE GITBASH
+(revisar si estamos en la rama correcta)
+git status
+git add .
+git commit -m "Actualización de Negocios y Services"
+git push origin main
+
+-------------------->
+
+
